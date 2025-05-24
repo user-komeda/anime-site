@@ -62,8 +62,14 @@
   },
   "scripts": {
     "start": "php -S localhost:8080 -t public",
+    "check": [
+      "@phpstan",
+      "@phpcf",
+      "@phpmd",
+      "@deptrac"
+    ],
     "phpstan": "./vendor/bin/phpstan",
-    "phpcf": "./vendor/bin/php-cs-fixer .",
+    "phpcf": "./vendor/bin/php-cs-fixer fix ./",
     "phpmd": "./vendor/bin/phpmd ./ text phpmd.xml --suffixes php --exclude vendor,var,public,.github,.logs",
     "test": "phpunit"
   }

@@ -1,1 +1,6 @@
 anime-site-front/.yarn/install-state.gz
+.yarn/install-state.gz
+.editorconfig
+node_modules
+.turbo
+apps/anime-site-front/.yarn/install-state.gz

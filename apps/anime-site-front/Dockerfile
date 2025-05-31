@@ -1,22 +1,25 @@
-FROM node:20-alpine AS development-dependencies-env
-COPY . /app
-WORKDIR /app
-RUN npm ci
+FROM ghcr.io/user-komeda/docker_node:sha-304b09e@sha256:cae366f377ce91cfc4a8fab9a64a28e80d0fad90d4aa0413e392700bb3d3a5d0 as base
 
-FROM node:20-alpine AS production-dependencies-env
-COPY ./package.json package-lock.json /app/
-WORKDIR /app
-RUN npm ci --omit=dev
+FROM base AS builder
+RUN microdnf update -y
+RUN microdnf install -y libc6-compat
+RUN yarn global add turbo
+COPY . .
+RUN turbo prune anime-site-front --docker
 
-FROM node:20-alpine AS build-env
-COPY . /app/
-COPY --from=development-dependencies-env /app/node_modules /app/node_modules
+FROM base AS installer
+RUN microdnf update -y
+RUN microdnf install -y libc6-compat
 WORKDIR /app
-RUN npm run build
+COPY --from=builder /app/out/json/ .
+RUN yarn install
+COPY --from=builder /app/out/full/ .
+RUN yarn build
 
-FROM node:20-alpine
-COPY ./package.json package-lock.json /app/
-COPY --from=production-dependencies-env /app/node_modules /app/node_modules
+FROM base AS runner
+WORKDIR /app
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+USER nextjs
 COPY --from=build-env /app/build /app/build
-WORKDIR /app
 CMD ["npm", "run", "start"]

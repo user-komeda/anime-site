@@ -1,0 +1,17 @@
+services:
+  anime-site-front:
+    container_name: anime-site-front
+    build:
+      context: .
+      dockerfile: ./apps/anime-site-front/Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+  anime-site-backend:
+    container_name: anime-site-backend
+    build:
+      context: .
+      dockerfile: ./apps/anime-site-backend/Dockerfile
+    restart: always
+    ports:
+      - 8080:8080

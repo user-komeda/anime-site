@@ -6,6 +6,12 @@
       "persistent": true,
       "cache": false
     },
-    "check": {}
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".react-router/**", "build/**"],
+      "cache": true
+    },
+    "check": {},
+    "test": {}
   }
 }

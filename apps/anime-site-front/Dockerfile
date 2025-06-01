@@ -31,5 +31,4 @@ RUN corepack install -g yarn@stable
 COPY --from=installer /app/apps/anime-site-front/build/ /app/build/
 COPY --from=installer /app/apps/anime-site-front/package.json /app/
 COPY --from=installer /app/node_modules /app/node_modules/
-#COPY --from=installer /app/yarn.lock /app/
-#CMD ["npm","start"]
+CMD ["npm","start"]

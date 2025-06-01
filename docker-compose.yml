@@ -1,5 +1,3 @@
-version: "3"
-
 services:
   anime-site-front:
     container_name: anime-site-front
@@ -8,9 +6,7 @@ services:
       dockerfile: ./apps/anime-site-front/Dockerfile
     restart: always
     ports:
-      - 5173:5173
-    networks:
-      - app_network
+      - 3000:3000
   anime-site-backend:
     container_name: anime-site-backend
     build:
@@ -19,11 +15,3 @@ services:
     restart: always
     ports:
       - 8080:8080
-    networks:
-      - app_network
-
-# Define a network, which allows containers to communicate
-# with each other, by using their container name as a hostname
-networks:
-  app_network:
-    external: true

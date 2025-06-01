@@ -16,7 +16,7 @@ WORKDIR /app
 COPY --from=builder /out/json/ .
 RUN corepack enable
 RUN corepack install -g yarn@stable 
-RUN yarn workspaces focus --production
+RUN yarn install
 COPY --from=builder /out/full/ .
 RUN yarn build
 
@@ -28,7 +28,8 @@ RUN corepack install -g yarn@stable
 #RUN addgroup --system --gid 1001 nodejs
 #RUN adduser --system --uid 1001 nextjs
 #USER nextjs
-COPY --from=installer /app/apps/anime-site-front/build/ /app/build
-COPY --from=installer /app/apps/anime-site-front/package.json /app/yarn.lcok /app/
-COPY --from=installer /app/node_modules /app/
-CMD ["yarn","start"]
+COPY --from=installer /app/apps/anime-site-front/build/ /app/build/
+COPY --from=installer /app/apps/anime-site-front/package.json /app/
+COPY --from=installer /app/node_modules /app/node_modules/
+#COPY --from=installer /app/yarn.lock /app/
+#CMD ["npm","start"]

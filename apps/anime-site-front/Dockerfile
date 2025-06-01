@@ -1,25 +1,34 @@
-FROM ghcr.io/user-komeda/docker_node:sha-304b09e@sha256:cae366f377ce91cfc4a8fab9a64a28e80d0fad90d4aa0413e392700bb3d3a5d0 as base
+FROM ghcr.io/user-komeda/docker_node:sha-7b65646@sha256:50422fcfb8c922abcde11dac975ed4d570068438cdb916899010287e03de1b80 AS base
 
 FROM base AS builder
-RUN microdnf update -y
-RUN microdnf install -y libc6-compat
+#RUN microdnf update -y
+#RUN apk add --no-cache libc6-compat
 RUN yarn global add turbo
+#RUN corepack enable
+#RUN yarn set version stable
 COPY . .
-RUN turbo prune anime-site-front --docker
+RUN turbo prune --scope=anime-site-front --docker
 
 FROM base AS installer
-RUN microdnf update -y
-RUN microdnf install -y libc6-compat
+#RUN microdnf update -y
 WORKDIR /app
-COPY --from=builder /app/out/json/ .
-RUN yarn install
-COPY --from=builder /app/out/full/ .
+
+COPY --from=builder /out/json/ .
+RUN corepack enable
+RUN corepack install -g yarn@stable 
+RUN yarn workspaces focus --production
+COPY --from=builder /out/full/ .
 RUN yarn build
+
 
 FROM base AS runner
 WORKDIR /app
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
-USER nextjs
-COPY --from=build-env /app/build /app/build
-CMD ["npm", "run", "start"]
+RUN corepack enable
+RUN corepack install -g yarn@stable
+#RUN addgroup --system --gid 1001 nodejs
+#RUN adduser --system --uid 1001 nextjs
+#USER nextjs
+COPY --from=installer /app/apps/anime-site-front/build/ /app/build
+COPY --from=installer /app/apps/anime-site-front/package.json /app/yarn.lcok /app/
+COPY --from=installer /app/node_modules /app/
+CMD ["yarn","start"]

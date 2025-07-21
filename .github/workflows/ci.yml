@@ -14,6 +14,9 @@ jobs:
           node-version: 22
       - name: Install dependencies
         uses: php-actions/composer@v6
+        with:
+          command: install
+          working-directory: /apps/anime-site-backend
       - name: enable corepack
         run: corepack enable
       - name: yarn set v4

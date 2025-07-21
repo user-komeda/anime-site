@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 22
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@0f7f1d08e3e32076e51cae65eb0b0c871405b16e # v2
         with:
           php-version: "8.2"
           extensions: sockets
@@ -24,7 +24,7 @@ jobs:
 
       # Composer install
       - name: Install dependencies
-        uses: php-actions/composer@v6
+        uses: php-actions/composer@8a65f0d3c6a1d17ca4800491a40b5756a4c164f3 # v6
         with:
           php_version: "8.2"
           php_extensions: sockets

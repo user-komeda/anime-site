@@ -16,7 +16,7 @@ jobs:
         uses: php-actions/composer@v6
         with:
           command: install
-          working_dir: /apps/anime-site-backend
+          working_dir: apps/anime-site-backend
       - name: enable corepack
         run: corepack enable
       - name: yarn set v4

@@ -683,7 +683,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.28.0, @eslint/js@npm:^9.22.0":
+"@eslint/js@npm:9.28.0":
   version: 9.28.0
   resolution: "@eslint/js@npm:9.28.0"
   checksum: 10c0/5a6759542490dd9f778993edfbc8d2f55168fd0f7336ceed20fe3870c65499d72fc0bca8d1ae00ea246b0923ea4cba2e0758a8a5507a3506ddcf41c92282abb8
@@ -924,7 +924,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:^1.52.0":
+"@playwright/test@npm:1.52.0":
   version: 1.52.0
   resolution: "@playwright/test@npm:1.52.0"
   dependencies:
@@ -935,7 +935,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-router/dev@npm:^7.5.3":
+"@react-router/dev@npm:7.6.1":
   version: 7.6.1
   resolution: "@react-router/dev@npm:7.6.1"
   dependencies:
@@ -1351,7 +1351,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^10.4.0":
+"@testing-library/dom@npm:10.4.0":
   version: 10.4.0
   resolution: "@testing-library/dom@npm:10.4.0"
   dependencies:
@@ -1367,7 +1367,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^6.6.3":
+"@testing-library/jest-dom@npm:6.6.3":
   version: 6.6.3
   resolution: "@testing-library/jest-dom@npm:6.6.3"
   dependencies:
@@ -1382,7 +1382,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^16.3.0":
+"@testing-library/react@npm:16.3.0":
   version: 16.3.0
   resolution: "@testing-library/react@npm:16.3.0"
   dependencies:
@@ -1402,7 +1402,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^14.6.1":
+"@testing-library/user-event@npm:14.6.1":
   version: 14.6.1
   resolution: "@testing-library/user-event@npm:14.6.1"
   peerDependencies:
@@ -1427,7 +1427,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint-plugin-jsx-a11y@npm:^6":
+"@types/eslint-plugin-jsx-a11y@npm:6.10.0":
   version: 6.10.0
   resolution: "@types/eslint-plugin-jsx-a11y@npm:6.10.0"
   dependencies:
@@ -1467,7 +1467,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20":
+"@types/node@npm:20.17.57":
   version: 20.17.57
   resolution: "@types/node@npm:20.17.57"
   dependencies:
@@ -1749,7 +1749,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/eslint-plugin@npm:^1.1.44":
+"@vitest/eslint-plugin@npm:1.2.1":
   version: 1.2.1
   resolution: "@vitest/eslint-plugin@npm:1.2.1"
   dependencies:
@@ -1912,52 +1912,52 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "anime-site-front@workspace:apps/anime-site-front"
   dependencies:
-    "@eslint/js": "npm:^9.22.0"
-    "@playwright/test": "npm:^1.52.0"
-    "@react-router/dev": "npm:^7.5.3"
+    "@eslint/js": "npm:9.28.0"
+    "@playwright/test": "npm:1.52.0"
+    "@react-router/dev": "npm:7.6.1"
     "@react-router/node": "npm:^7.5.3"
     "@react-router/serve": "npm:^7.5.3"
     "@tailwindcss/vite": "npm:^4.1.5"
-    "@testing-library/dom": "npm:^10.4.0"
-    "@testing-library/jest-dom": "npm:^6.6.3"
-    "@testing-library/react": "npm:^16.3.0"
-    "@testing-library/user-event": "npm:^14.6.1"
-    "@types/eslint-plugin-jsx-a11y": "npm:^6"
-    "@types/node": "npm:^20"
+    "@testing-library/dom": "npm:10.4.0"
+    "@testing-library/jest-dom": "npm:6.6.3"
+    "@testing-library/react": "npm:16.3.0"
+    "@testing-library/user-event": "npm:14.6.1"
+    "@types/eslint-plugin-jsx-a11y": "npm:6.10.0"
+    "@types/node": "npm:20.17.57"
     "@types/react": "npm:19.1.6"
     "@types/react-dom": "npm:19.1.5"
-    "@vitest/eslint-plugin": "npm:^1.1.44"
-    concurrently: "npm:^9.1.2"
-    eslint: "npm:^9.22.0"
-    eslint-config-prettier: "npm:^10.1.2"
-    eslint-config-turbo: "npm:^2.5.2"
-    eslint-import-resolver-typescript: "npm:^4.3.4"
-    eslint-plugin-import: "npm:^2.31.0"
-    eslint-plugin-jsx-a11y: "npm:^6.10.2"
-    eslint-plugin-no-relative-import-paths: "npm:^1.6.1"
-    eslint-plugin-react: "npm:^7.37.5"
-    eslint-plugin-react-compiler: "npm:^19.1.0-rc.1"
-    eslint-plugin-react-hooks: "npm:^5.2.0"
-    eslint-plugin-react-refresh: "npm:^0.4.19"
-    eslint-plugin-testing-library: "npm:^7.1.1"
-    eslint-plugin-unused-imports: "npm:^4.1.4"
-    globals: "npm:^16.0.0"
+    "@vitest/eslint-plugin": "npm:1.2.1"
+    concurrently: "npm:9.1.2"
+    eslint: "npm:9.28.0"
+    eslint-config-prettier: "npm:10.1.5"
+    eslint-config-turbo: "npm:2.5.4"
+    eslint-import-resolver-typescript: "npm:4.4.2"
+    eslint-plugin-import: "npm:2.31.0"
+    eslint-plugin-jsx-a11y: "npm:6.10.2"
+    eslint-plugin-no-relative-import-paths: "npm:1.6.1"
+    eslint-plugin-react: "npm:7.37.5"
+    eslint-plugin-react-compiler: "npm:19.1.0-rc.2"
+    eslint-plugin-react-hooks: "npm:5.2.0"
+    eslint-plugin-react-refresh: "npm:0.4.20"
+    eslint-plugin-testing-library: "npm:7.3.0"
+    eslint-plugin-unused-imports: "npm:4.1.4"
+    globals: "npm:16.2.0"
     isbot: "npm:^5.1.27"
-    jsdom: "npm:^26.1.0"
-    lefthook: "npm:^1.11.12"
+    jsdom: "npm:26.1.0"
+    lefthook: "npm:1.11.13"
     prettier: "npm:3.5.3"
-    prettier-plugin-tailwindcss: "npm:^0.6.11"
+    prettier-plugin-tailwindcss: "npm:0.6.12"
     react: "npm:^19.1.0"
     react-dom: "npm:^19.1.0"
     react-router: "npm:^7.5.3"
     tailwindcss: "npm:^4.1.5"
     turbo: "npm:^2.5.2"
-    typescript: "npm:^5.8.3"
-    typescript-eslint: "npm:^8.26.1"
+    typescript: "npm:5.8.3"
+    typescript-eslint: "npm:8.33.0"
     valibot: "npm:^1.0.0"
-    vite: "npm:^6.3.1"
-    vite-tsconfig-paths: "npm:^5.1.4"
-    vitest: "npm:^3.1.2"
+    vite: "npm:6.3.5"
+    vite-tsconfig-paths: "npm:5.1.4"
+    vitest: "npm:3.1.4"
   languageName: unknown
   linkType: soft
 
@@ -2483,7 +2483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:^9.1.2":
+"concurrently@npm:9.1.2":
   version: 9.1.2
   resolution: "concurrently@npm:9.1.2"
   dependencies:
@@ -3128,7 +3128,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^10.1.2":
+"eslint-config-prettier@npm:10.1.5":
   version: 10.1.5
   resolution: "eslint-config-prettier@npm:10.1.5"
   peerDependencies:
@@ -3139,7 +3139,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-turbo@npm:^2.5.2":
+"eslint-config-turbo@npm:2.5.4":
   version: 2.5.4
   resolution: "eslint-config-turbo@npm:2.5.4"
   dependencies:
@@ -3177,7 +3177,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-typescript@npm:^4.3.4":
+"eslint-import-resolver-typescript@npm:4.4.2":
   version: 4.4.2
   resolution: "eslint-import-resolver-typescript@npm:4.4.2"
   dependencies:
@@ -3213,7 +3213,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.31.0":
+"eslint-plugin-import@npm:2.31.0":
   version: 2.31.0
   resolution: "eslint-plugin-import@npm:2.31.0"
   dependencies:
@@ -3242,7 +3242,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsx-a11y@npm:^6.10.2":
+"eslint-plugin-jsx-a11y@npm:6.10.2":
   version: 6.10.2
   resolution: "eslint-plugin-jsx-a11y@npm:6.10.2"
   dependencies:
@@ -3267,14 +3267,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-no-relative-import-paths@npm:^1.6.1":
+"eslint-plugin-no-relative-import-paths@npm:1.6.1":
   version: 1.6.1
   resolution: "eslint-plugin-no-relative-import-paths@npm:1.6.1"
   checksum: 10c0/952d136ae959408d7f50fc6a630a010421ac39e7b8ccb0980817ae058941d19d6abe60233eabb5e9f32198de17d5d6ce9432f87ee8e2f2a243d71605b2e247ef
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-compiler@npm:^19.1.0-rc.1":
+"eslint-plugin-react-compiler@npm:19.1.0-rc.2":
   version: 19.1.0-rc.2
   resolution: "eslint-plugin-react-compiler@npm:19.1.0-rc.2"
   dependencies:
@@ -3290,7 +3290,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^5.2.0":
+"eslint-plugin-react-hooks@npm:5.2.0":
   version: 5.2.0
   resolution: "eslint-plugin-react-hooks@npm:5.2.0"
   peerDependencies:
@@ -3299,7 +3299,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-refresh@npm:^0.4.19":
+"eslint-plugin-react-refresh@npm:0.4.20":
   version: 0.4.20
   resolution: "eslint-plugin-react-refresh@npm:0.4.20"
   peerDependencies:
@@ -3308,7 +3308,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.37.5":
+"eslint-plugin-react@npm:7.37.5":
   version: 7.37.5
   resolution: "eslint-plugin-react@npm:7.37.5"
   dependencies:
@@ -3336,7 +3336,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^7.1.1":
+"eslint-plugin-testing-library@npm:7.3.0":
   version: 7.3.0
   resolution: "eslint-plugin-testing-library@npm:7.3.0"
   dependencies:
@@ -3360,7 +3360,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unused-imports@npm:^4.1.4":
+"eslint-plugin-unused-imports@npm:4.1.4":
   version: 4.1.4
   resolution: "eslint-plugin-unused-imports@npm:4.1.4"
   peerDependencies:
@@ -3397,7 +3397,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.22.0":
+"eslint@npm:9.28.0":
   version: 9.28.0
   resolution: "eslint@npm:9.28.0"
   dependencies:
@@ -3903,6 +3903,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"globals@npm:16.2.0":
+  version: 16.2.0
+  resolution: "globals@npm:16.2.0"
+  checksum: 10c0/c2b3ea163faa6f8a38076b471b12f4bda891f7df7f7d2e8294fb4801d735a51a73431bf4c1696c5bf5dbca5e0a0db894698acfcbd3068730c6b12eef185dea25
+  languageName: node
+  linkType: hard
+
 "globals@npm:^11.1.0":
   version: 11.12.0
   resolution: "globals@npm:11.12.0"
@@ -3914,13 +3921,6 @@ __metadata:
   version: 14.0.0
   resolution: "globals@npm:14.0.0"
   checksum: 10c0/b96ff42620c9231ad468d4c58ff42afee7777ee1c963013ff8aabe095a451d0ceeb8dcd8ef4cbd64d2538cef45f787a78ba3a9574f4a634438963e334471302d
-  languageName: node
-  linkType: hard
-
-"globals@npm:^16.0.0":
-  version: 16.2.0
-  resolution: "globals@npm:16.2.0"
-  checksum: 10c0/c2b3ea163faa6f8a38076b471b12f4bda891f7df7f7d2e8294fb4801d735a51a73431bf4c1696c5bf5dbca5e0a0db894698acfcbd3068730c6b12eef185dea25
   languageName: node
   linkType: hard
 
@@ -4528,7 +4528,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsdom@npm:^26.1.0":
+"jsdom@npm:26.1.0":
   version: 26.1.0
   resolution: "jsdom@npm:26.1.0"
   dependencies:
@@ -4747,7 +4747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lefthook@npm:^1.11.12":
+"lefthook@npm:1.11.13":
   version: 1.11.13
   resolution: "lefthook@npm:1.11.13"
   dependencies:
@@ -5691,7 +5691,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:^0.6.11":
+"prettier-plugin-tailwindcss@npm:0.6.12":
   version: 0.6.12
   resolution: "prettier-plugin-tailwindcss@npm:0.6.12"
   peerDependencies:
@@ -7060,7 +7060,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.26.1":
+"typescript-eslint@npm:8.33.0":
   version: 8.33.0
   resolution: "typescript-eslint@npm:8.33.0"
   dependencies:
@@ -7074,7 +7074,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.8.3":
+"typescript@npm:5.8.3":
   version: 5.8.3
   resolution: "typescript@npm:5.8.3"
   bin:
@@ -7084,7 +7084,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.8.3#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>":
   version: 5.8.3
   resolution: "typescript@patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"
   bin:
@@ -7321,7 +7321,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-tsconfig-paths@npm:^5.1.4":
+"vite-tsconfig-paths@npm:5.1.4":
   version: 5.1.4
   resolution: "vite-tsconfig-paths@npm:5.1.4"
   dependencies:
@@ -7337,7 +7337,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.0.0 || ^6.0.0, vite@npm:^6.3.1":
+"vite@npm:6.3.5, vite@npm:^5.0.0 || ^6.0.0":
   version: 6.3.5
   resolution: "vite@npm:6.3.5"
   dependencies:
@@ -7392,7 +7392,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitest@npm:^3.1.2":
+"vitest@npm:3.1.4":
   version: 3.1.4
   resolution: "vitest@npm:3.1.4"
   dependencies:

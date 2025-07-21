@@ -12,11 +12,22 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: 22
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          extensions: sockets
+          coverage: none
+      # Git safe.directory の設定
+      - name: Mark repo as safe for git
+        run: git config --global --add safe.directory $GITHUB_WORKSPACE
+
+      # Composer install
       - name: Install dependencies
         uses: php-actions/composer@v6
         with:
-          command: install
-          working_dir: apps/anime-site-backend
+          php_version: "8.2"
+          php_extensions: sockets
       - name: enable corepack
         run: corepack enable
       - name: yarn set v4

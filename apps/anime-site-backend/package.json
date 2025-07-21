@@ -1,0 +1,9 @@
+{
+  "name": "anime-site-backend",
+  "private": true,
+  "scripts": {
+    "dev": "composer start",
+    "check": "composer check"
+  },
+  "packageManager": "yarn@4.9.1"
+}

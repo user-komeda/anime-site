@@ -15,7 +15,7 @@ import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
-  { ignores: ['dist', '.react-router/'] },
+  { ignores: ['dist', '.react-router/', 'build/'] },
   {
     extends: [
       // ...turboConfig,
@@ -104,6 +104,16 @@ export default tseslint.config(
     },
     rules: {
       'react-refresh/only-export-components': ['off'],
+    },
+  },
+  {
+    files: ['app/**/root.tsx'],
+    languageOptions: {
+      globals: globals.browser,
+    },
+    rules: {
+      'react-refresh/only-export-components': ['off'],
+      'no-relative-import-paths/no-relative-import-paths': ['off'],
     },
   },
   {

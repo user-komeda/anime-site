@@ -1,0 +1,15 @@
+{
+  "name": "anime-site",
+  "packageManager": "yarn@4.9.1",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "check": "turbo run check"
+  },
+  "dependencies": {
+    "turbo": "^2.5.4"
+  }
+}

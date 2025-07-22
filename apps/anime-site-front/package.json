@@ -40,7 +40,7 @@
     "eslint": "9.28.0",
     "eslint-config-prettier": "10.1.5",
     "eslint-config-turbo": "2.5.4",
-    "eslint-import-resolver-typescript": "4.4.2",
+    "eslint-import-resolver-typescript": "4.4.4",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-no-relative-import-paths": "1.6.1",

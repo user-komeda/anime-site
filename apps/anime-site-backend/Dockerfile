@@ -5,16 +5,11 @@ RUN microdnf -y install git findutils && microdnf clean all
 WORKDIR /app/
 
 RUN set -eux; \
-    curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/roadrunner-server/roadrunner/master/download-latest.sh | sh; \
-    # ダウンロードされた .tar.gz ファイル名を自動検出
-    FILE=$(find . -maxdepth 1 -name 'roadrunner-*-linux-amd64.tar.gz' | head -n 1); \
-    echo "Extracting $FILE"; \
-    tar -xzvf "$FILE"; \
-    DIR=$(echo "$FILE" | sed 's/\.tar\.gz$//'); \
-    echo "Moving binary from $DIR"; \
-    mv "$DIR/rr" /usr/bin/rr; \
-    # cleanup
-    rm -rf "$FILE" "$DIR"
+    RR_VERSION="2025.1.2"; \
+    curl -sSL -o rr.tar.gz "https://github.com/roadrunner-server/roadrunner/releases/download/v${RR_VERSION}/roadrunner-${RR_VERSION}-linux-amd64.tar.gz"; \
+    tar -xzvf rr.tar.gz; \
+    mv roadrunner-${RR_VERSION}-linux-amd64/rr /usr/bin/rr; \
+    rm -rf rr.tar.gz roadrunner-${RR_VERSION}-linux-amd64
 
 COPY /apps/anime-site-backend/ .
 

@@ -20,7 +20,7 @@ jobs:
           coverage: none
       # Git safe.directory の設定
       - name: Mark repo as safe for git
-        run: git config --global --add safe.directory $GITHUB_WORKSPACE
+        run: git config --global --add safe.directory /app
 
       # Composer install
       - name: Install dependencies

@@ -37,7 +37,7 @@
     "symfony/cache": "^7.2"
   },
   "require-dev": {
-    "deptrac/deptrac": "^3.0",
+    "deptrac/deptrac": "^4.0",
     "friendsofphp/php-cs-fixer": "^3.75",
     "jangregor/phpstan-prophecy": "^1.0.0",
     "phpmd/phpmd": "^2.15",

@@ -2,25 +2,23 @@
 
 declare(strict_types=1);
 
-use App\Application\Handlers\HttpErrorHandler;
-use App\Application\Handlers\ShutdownHandler;
-use App\Application\ResponseEmitter\ResponseEmitter;
-use App\Application\Settings\SettingsInterface;
+use App\Config\Handlers\ShutdownHandler;
+use App\Config\Settings\SettingsInterface;
+use App\Presentation\handler\CustomErrorHandler;
 use DI\ContainerBuilder;
+use Nyholm\Psr7\Factory\Psr17Factory;
+use Nyholm\Psr7\Response;
 use Slim\Factory\AppFactory;
 use Slim\Factory\ServerRequestCreatorFactory;
-use Nyholm\Psr7\Response;
-use Nyholm\Psr7\Factory\Psr17Factory;
-
-use Spiral\RoadRunner\Worker;
 use Spiral\RoadRunner\Http\PSR7Worker;
+use Spiral\RoadRunner\Worker;
 
 require __DIR__ . '/vendor/autoload.php';
 
 // Instantiate PHP-DI ContainerBuilder
 $containerBuilder = new ContainerBuilder();
 
-if (false) { // Should be set to true in production
+if (true) { // Should be set to true in production
     $containerBuilder->enableCompilation(__DIR__ . '/var/cache');
 }
 
@@ -65,20 +63,29 @@ $request = $serverRequestCreator->createServerRequestFromGlobals();
 
 // Create Error Handler
 $responseFactory = $app->getResponseFactory();
-$errorHandler = new HttpErrorHandler($callableResolver, $responseFactory);
+$errorHandler = new CustomErrorHandler($callableResolver, $responseFactory);
 
 // Create Shutdown Handler
-$shutdownHandler = new ShutdownHandler($request, $errorHandler, $displayErrorDetails);
+$shutdownHandler = new ShutdownHandler(
+    $request,
+    $errorHandler,
+    $displayErrorDetails
+);
 register_shutdown_function($shutdownHandler);
 
 // Add Routing Middleware
 $app->addRoutingMiddleware();
 
+
 // Add Body Parsing Middleware
 $app->addBodyParsingMiddleware();
 
 // Add Error Middleware
-$errorMiddleware = $app->addErrorMiddleware($displayErrorDetails, $logError, $logErrorDetails);
+$errorMiddleware = $app->addErrorMiddleware(
+    $displayErrorDetails,
+    $logError,
+    $logErrorDetails
+);
 $errorMiddleware->setDefaultErrorHandler($errorHandler);
 
 // Run App & Emit Response

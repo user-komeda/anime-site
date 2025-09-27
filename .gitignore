@@ -4,3 +4,9 @@ anime-site-front/.yarn/install-state.gz
 node_modules
 .turbo
 apps/anime-site-front/.yarn/install-state.gz
+/.idea/.gitignore
+/.idea/anime-site.iml
+/.idea/vcs.xml
+/.idea/php.xml
+/.idea/prettier.xml
+/.idea/modules.xml

@@ -22,19 +22,24 @@
     }
   ],
   "require": {
-    "php": "^8.0",
+    "php": "^8.2",
     "ext-json": "*",
-    "doctrine/dbal": "4.3.3",
-    "doctrine/orm": "3.5.2",
+    "doctrine/dbal": "4.3.1",
+    "doctrine/migrations": "^3.9",
+    "doctrine/orm": "3.5.1",
     "monolog/monolog": "^3.0",
     "nyholm/psr7": "^1.8",
     "php-di/php-di": "^7.0",
+    "ramsey/uuid": "^4.9",
+    "ramsey/uuid-doctrine": "^2.1",
+    "respect/validation": "^2.4",
     "slim/psr7": "^1.5",
     "slim/slim": "^4.10",
     "spiral/roadrunner": "^2025.1",
     "spiral/roadrunner-http": "^3.5",
     "spiral/roadrunner-worker": "^3.6",
-    "symfony/cache": "^7.2"
+    "symfony/cache": "^7.2",
+    "zircote/swagger-php": "^5.1"
   },
   "require-dev": {
     "deptrac/deptrac": "^3.0",
@@ -45,7 +50,8 @@
     "phpstan/extension-installer": "^1.2.0",
     "phpstan/phpstan": "^1.8",
     "phpunit/phpunit": "^9.5.26",
-    "squizlabs/php_codesniffer": "^4.0"
+    "squizlabs/php_codesniffer": "^3.7",
+    "swagger-api/swagger-ui": "^5.27"
   },
   "config": {
     "allow-plugins": {
@@ -65,7 +71,7 @@
     }
   },
   "scripts": {
-    "start": "rr serve",
+    "start": "rr serve -c .rr.yaml",
     "check": [
       "@phpstan",
       "@phpcf",
@@ -75,7 +81,7 @@
     ],
     "phpstan": "./vendor/bin/phpstan",
     "phpcf": "./vendor/bin/php-cs-fixer fix ./",
-    "phpmd": "./vendor/bin/phpmd ./ text phpmd.xml --suffixes php --exclude vendor,var,public,.github,.logs",
+    "phpmd": "./vendor/bin/phpmd ./ text phpmd.xml --suffixes php --exclude vendor,var,public,.github,.logs,migrations,generate-criteria-param-builder.php",
     "test": "phpunit"
   }
 }

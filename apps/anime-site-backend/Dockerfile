@@ -1,4 +1,4 @@
-FROM ghcr.io/user-komeda/docker_php:sha-9b771ff@sha256:97a8b8d1a343d047a7ccd0dc1f1002f88e91d1dd34051c48f77565d32e175170
+FROM ghcr.io/user-komeda/docker_php:sha-3de99bb@sha256:bcc6de0672fece1298c07ee35d76c78024d0608c5b4d291edb411952b459cb1d
 
 RUN microdnf -y install git findutils && microdnf clean all
 

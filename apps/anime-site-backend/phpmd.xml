@@ -28,6 +28,4 @@
         <exclude name="ShortVariable"/>
         <exclude name="LongVariable"/>
     </rule>
-
-
 </ruleset>

@@ -7780,16 +7780,16 @@
         },
         {
             "name": "swagger-api/swagger-ui",
-            "version": "v5.27.1",
+            "version": "v5.29.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swagger-api/swagger-ui.git",
-                "reference": "43ed706e9519841e97401cfad83faca564b37eaf"
+                "reference": "62b6d320ef0fe1addd0487e55006f5306fc1e945"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/43ed706e9519841e97401cfad83faca564b37eaf",
-                "reference": "43ed706e9519841e97401cfad83faca564b37eaf",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/62b6d320ef0fe1addd0487e55006f5306fc1e945",
+                "reference": "62b6d320ef0fe1addd0487e55006f5306fc1e945",
                 "shasum": ""
             },
             "type": "library",
@@ -7835,9 +7835,9 @@
             ],
             "support": {
                 "issues": "https://github.com/swagger-api/swagger-ui/issues",
-                "source": "https://github.com/swagger-api/swagger-ui/tree/v5.27.1"
+                "source": "https://github.com/swagger-api/swagger-ui/tree/v5.29.2"
             },
-            "time": "2025-08-01T07:33:59+00:00"
+            "time": "2025-10-02T09:54:29+00:00"
         },
         {
             "name": "symfony/config",

@@ -835,6 +835,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/js@npm:9.37.0":
+  version: 9.37.0
+  resolution: "@eslint/js@npm:9.37.0"
+  checksum: 10c0/84f98a6213522fc76ea104bd910f606136200bd918544e056a7a22442d3f9d5c3c5cd7f4cdf2499d49b1fa140155b87d597a1f16d01644920f05c228e9ca0378
+  languageName: node
+  linkType: hard
+
 "@eslint/object-schema@npm:^2.1.6":
   version: 2.1.6
   resolution: "@eslint/object-schema@npm:2.1.6"
@@ -2506,7 +2513,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "anime-site-front@workspace:apps/anime-site-front"
   dependencies:
-    "@eslint/js": "npm:9.36.0"
+    "@eslint/js": "npm:9.37.0"
     "@playwright/test": "npm:1.55.1"
     "@react-router/dev": "npm:7.9.3"
     "@react-router/node": "npm:^7.5.3"

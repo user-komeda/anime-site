@@ -35,7 +35,7 @@
     "@types/node": "24.10.0",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
-    "@vitest/eslint-plugin": "1.4.1",
+    "@vitest/eslint-plugin": "1.4.2",
     "concurrently": "9.2.1",
     "eslint": "9.39.1",
     "eslint-config-prettier": "10.1.8",

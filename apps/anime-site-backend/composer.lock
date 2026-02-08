@@ -2259,16 +2259,16 @@
         },
         {
             "name": "respect/validation",
-            "version": "2.4.11",
+            "version": "2.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Respect/Validation.git",
-                "reference": "31dfa6648dee186893ed73fc67df45d8acc3601b"
+                "reference": "f05659faef60b303f194f5e8bc580c288c9699bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Respect/Validation/zipball/31dfa6648dee186893ed73fc67df45d8acc3601b",
-                "reference": "31dfa6648dee186893ed73fc67df45d8acc3601b",
+                "url": "https://api.github.com/repos/Respect/Validation/zipball/f05659faef60b303f194f5e8bc580c288c9699bf",
+                "reference": "f05659faef60b303f194f5e8bc580c288c9699bf",
                 "shasum": ""
             },
             "require": {
@@ -2321,9 +2321,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Respect/Validation/issues",
-                "source": "https://github.com/Respect/Validation/tree/2.4.11"
+                "source": "https://github.com/Respect/Validation/tree/2.4.12"
             },
-            "time": "2026-02-07T00:09:24+00:00"
+            "time": "2026-02-08T00:13:50+00:00"
         },
         {
             "name": "roadrunner-php/roadrunner-api-dto",

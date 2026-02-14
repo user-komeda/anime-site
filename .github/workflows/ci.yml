@@ -16,7 +16,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@44454db4f0199b8b9685a5d763dc37cbf79108e1 # v2
         with:
-          php-version: "8.4"
+          php-version: "8.5"
           extensions: sockets
           coverage: none
       # Git safe.directory の設定
@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         uses: php-actions/composer@8a65f0d3c6a1d17ca4800491a40b5756a4c164f3 # v6
         with:
-          php_version: "8.4"
+          php_version: "8.5"
           php_extensions: sockets
           working_dir: apps/anime-site-backend
       - name: enable corepack

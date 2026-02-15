@@ -21,7 +21,7 @@ class UserEntity implements Entity
     #[ORM\Column(type: 'string', unique: true)]
     #[ORM\GeneratedValue(strategy: 'CUSTOM')]
     #[ORM\CustomIdGenerator(class: UuidGenerator::class)]
-    private string|null $id = null;
+    private ?string $id = null;
     #[ORM\Column(type: 'string')]
     private string $firstName;
     #[ORM\Column(type: 'string')]

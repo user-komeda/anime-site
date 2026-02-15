@@ -29,11 +29,17 @@ class CreateUserRequest extends BaseRequest
         $lastName = $body['lastName'] ?? null;
         $email = $body['email'] ?? null;
 
-        /** @var mixed $v */
-        $v = 'Respect\Validation\ValidatorBuilder';
-        $isValidFirstName = $v::stringType()->notEmpty()->isValid($firstName);
-        $isValidLastName = $v::stringType()->notEmpty()->isValid($lastName);
-        $isValidEmail = $v::email()->isValid($email);
+        $isValidFirstName = v::allOf(
+            v::stringType(),
+            v::not(v::falsy())
+        )->isValid($firstName);
+
+        $isValidLastName = v::allOf(
+            v::stringType(),
+            v::not(v::falsy())
+        )->isValid($lastName);
+
+        $isValidEmail = v::email()->isValid($email);
 
         if (!$isValidFirstName || !$isValidLastName || !$isValidEmail) {
             throw new HttpBadRequestException($request);

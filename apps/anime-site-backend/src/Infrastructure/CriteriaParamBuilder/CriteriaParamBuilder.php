@@ -17,7 +17,7 @@ abstract class CriteriaParamBuilder
      */
     private static array $propertyMapCache = [];
 
-    private function __construct(private readonly string $entityClass)
+    protected function __construct(private readonly string $entityClass)
     {
         // プロパティマップをキャッシュ
         if (!isset(self::$propertyMapCache[$entityClass])) {

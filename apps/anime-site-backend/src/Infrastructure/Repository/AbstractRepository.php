@@ -10,6 +10,10 @@ use Doctrine\ORM\EntityRepository;
 /** @phpstan-ignore-next-line */
 abstract class AbstractRepository extends EntityRepository
 {
+    /**
+     * @param EntityManager $entityManager
+     * @param class-string $metadata
+     */
     #[Inject]
     public function __construct(
         private readonly EntityManager $entityManager,
@@ -21,7 +25,7 @@ abstract class AbstractRepository extends EntityRepository
         );
     }
 
-    /** @SuppressWarnings(PHPMD.CamelCaseMethodName) */
+    /** @SuppressWarnings("PHPMD.CamelCaseMethodName") */
     protected function _save(Entity $entity): Entity
     {
         $this->getEntityManager()->persist($entity);
@@ -29,7 +33,7 @@ abstract class AbstractRepository extends EntityRepository
         return $entity;
     }
 
-    /** @SuppressWarnings(PHPMD.CamelCaseMethodName) */
+    /** @SuppressWarnings("PHPMD.CamelCaseMethodName") */
     protected function _remove(Entity $entity): void
     {
         $this->getEntityManager()->remove($entity);
@@ -39,7 +43,7 @@ abstract class AbstractRepository extends EntityRepository
     /**
      * @param array<string,mixed> $criteria
      * @return bool
-     * @SuppressWarnings(PHPMD.CamelCaseMethodName)
+     * @SuppressWarnings("PHPMD.CamelCaseMethodName")
      */
     public function _isExist(array $criteria): bool
     {

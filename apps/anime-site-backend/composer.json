@@ -32,7 +32,7 @@
     "php-di/php-di": "^7.0",
     "ramsey/uuid": "^4.9",
     "ramsey/uuid-doctrine": "^2.1",
-    "respect/validation": "^2.4",
+    "respect/validation": "^3.0",
     "slim/psr7": "^1.5",
     "slim/slim": "^4.10",
     "spiral/roadrunner": "^2025.1",

@@ -16,7 +16,7 @@ class ResponseFactory
     }
 
     /**
-     * @SuppressWarnings(PHPMD.UnusedPrivateMethod)
+     * @SuppressWarnings("PHPMD.UnusedPrivateMethod")
      */
     private static function getResponder(
         Response $response,

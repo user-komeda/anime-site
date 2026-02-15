@@ -40,12 +40,11 @@ return function (App $app) {
             $swaggerUiPath = __DIR__ . '/../docs/';
 
             $fullPath = realpath($swaggerUiPath . $file);
+            $basePath = realpath($swaggerUiPath);
             if (
-                $fullPath === false || realpath(
-                    $swaggerUiPath
-                ) === false || strpos(
+                $fullPath === false || $basePath === false || strpos(
                     $fullPath,
-                    realpath($swaggerUiPath)
+                    $basePath
                 ) !== 0
             ) {
                 return $response->withStatus(404);

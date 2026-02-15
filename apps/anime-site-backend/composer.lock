@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ad1ba11d8d5949fbba974aa00be3c5a",
+    "content-hash": "80173a62d8210b5c7bbd39df901e0e2a",
     "packages": [
         {
             "name": "brick/math",
@@ -5220,32 +5220,35 @@
         },
         {
             "name": "jangregor/phpstan-prophecy",
-            "version": "1.0.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jan0707/phpstan-prophecy.git",
-                "reference": "2bc7ca9460395690c6bf7332bdfb2f25d5cae8e0"
+                "reference": "42b6e62dc0fa5724a667cb9a10c7245580f22033"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jan0707/phpstan-prophecy/zipball/2bc7ca9460395690c6bf7332bdfb2f25d5cae8e0",
-                "reference": "2bc7ca9460395690c6bf7332bdfb2f25d5cae8e0",
+                "url": "https://api.github.com/repos/Jan0707/phpstan-prophecy/zipball/42b6e62dc0fa5724a667cb9a10c7245580f22033",
+                "reference": "42b6e62dc0fa5724a667cb9a10c7245580f22033",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1 || ^8.0",
-                "phpstan/phpstan": "^1.0.0"
+                "php": "^7.4 || ^8.0",
+                "phpstan/phpstan": "^2.1.5"
             },
             "conflict": {
-                "phpspec/prophecy": "<1.7.0,>=2.0.0",
-                "phpunit/phpunit": "<6.0.0,>=10.0.0"
+                "phpspec/prophecy": "<1.17.0 || >=2.0.0",
+                "phpspec/prophecy-phpunit": "<2.3.0 || >=3.0.0",
+                "phpunit/phpunit": "<9.1.0 || >=14.0.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.1.1",
-                "ergebnis/license": "^1.0.0",
-                "ergebnis/php-cs-fixer-config": "~2.2.0",
+                "ergebnis/composer-normalize": "^2.50.0",
+                "ergebnis/license": "^2.7.0",
+                "ergebnis/php-cs-fixer-config": "^6.59.0",
+                "php-cs-fixer/shim": "^3.93.0",
                 "phpspec/prophecy": "^1.7.0",
-                "phpunit/phpunit": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0"
+                "phpspec/prophecy-phpunit": "^2.3",
+                "phpunit/phpunit": "^9.1.0"
             },
             "type": "phpstan-extension",
             "extra": {
@@ -5273,15 +5276,9 @@
             "description": "Provides a phpstan/phpstan extension for phpspec/prophecy",
             "support": {
                 "issues": "https://github.com/Jan0707/phpstan-prophecy/issues",
-                "source": "https://github.com/Jan0707/phpstan-prophecy/tree/1.0.0"
+                "source": "https://github.com/Jan0707/phpstan-prophecy/tree/2.3.0"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/localheinz",
-                    "type": "github"
-                }
-            ],
-            "time": "2021-11-08T16:37:47+00:00"
+            "time": "2026-02-10T08:07:43+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -5958,15 +5955,15 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.12.32",
+            "version": "2.1.39",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/2770dcdf5078d0b0d53f94317e06affe88419aa8",
-                "reference": "2770dcdf5078d0b0d53f94317e06affe88419aa8",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c6f73a2af4cbcd99c931d0fb8f08548cc0fa8224",
+                "reference": "c6f73a2af4cbcd99c931d0fb8f08548cc0fa8224",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2|^8.0"
+                "php": "^7.4|^8.0"
             },
             "conflict": {
                 "phpstan/phpstan-shim": "*"
@@ -6007,7 +6004,83 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-30T10:16:31+00:00"
+            "time": "2026-02-11T14:48:56+00:00"
+        },
+        {
+            "name": "phpstan/phpstan-doctrine",
+            "version": "2.0.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan-doctrine.git",
+                "reference": "f4ff6084a26d91174b3f0b047589af293a893104"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/f4ff6084a26d91174b3f0b047589af293a893104",
+                "reference": "f4ff6084a26d91174b3f0b047589af293a893104",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0",
+                "phpstan/phpstan": "^2.1.34"
+            },
+            "conflict": {
+                "doctrine/collections": "<1.0",
+                "doctrine/common": "<2.7",
+                "doctrine/mongodb-odm": "<1.2",
+                "doctrine/orm": "<2.5",
+                "doctrine/persistence": "<1.3"
+            },
+            "require-dev": {
+                "cache/array-adapter": "^1.1",
+                "composer/semver": "^3.3.2",
+                "cweagans/composer-patches": "^1.7.3",
+                "doctrine/annotations": "^2.0",
+                "doctrine/collections": "^1.6 || ^2.1",
+                "doctrine/common": "^2.7 || ^3.0",
+                "doctrine/dbal": "^3.3.8",
+                "doctrine/lexer": "^2.0 || ^3.0",
+                "doctrine/mongodb-odm": "^2.4.3",
+                "doctrine/orm": "^2.16.0",
+                "doctrine/persistence": "^2.2.1 || ^3.2",
+                "gedmo/doctrine-extensions": "^3.8",
+                "nesbot/carbon": "^2.49",
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpstan/phpstan-deprecation-rules": "^2.0.2",
+                "phpstan/phpstan-phpunit": "^2.0.8",
+                "phpstan/phpstan-strict-rules": "^2.0",
+                "phpunit/phpunit": "^9.6.20",
+                "ramsey/uuid": "^4.2",
+                "symfony/cache": "^5.4",
+                "symfony/uid": "^5.4 || ^6.4 || ^7.3"
+            },
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "extension.neon",
+                        "rules.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PHPStan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Doctrine extensions for PHPStan",
+            "keywords": [
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan-doctrine/issues",
+                "source": "https://github.com/phpstan/phpstan-doctrine/tree/2.0.16"
+            },
+            "time": "2026-02-11T08:54:45+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",

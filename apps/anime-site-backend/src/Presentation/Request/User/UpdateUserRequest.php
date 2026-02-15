@@ -28,17 +28,16 @@ class UpdateUserRequest extends BaseRequest
         $firstName = $body['firstName'] ?? null;
         $lastName = $body['lastName'] ?? null;
         $email = $body['email'] ?? null;
+        $isValidFirstName = v::allOf(
+            v::stringType(),
+            v::not(v::falsy())
+        )->isValid($firstName);
+        $isValidLastName = v::allOf(
+            v::stringType(),
+            v::not(v::falsy())
+        )->isValid($lastName);
 
-        /** @var mixed $v */
-        $v = 'Respect\Validation\ValidatorBuilder';
-
-        $isValidFirstName = $v::optional($v::stringType()->notEmpty())->isValid(
-            $firstName
-        );
-        $isValidLastName = $v::optional($v::stringType()->notEmpty())->isValid(
-            $lastName
-        );
-        $isValidEmail = $v::optional($v::email())->isValid($email);
+        $isValidEmail = v::email()->isValid($email);
 
         if (!$isValidFirstName || !$isValidLastName || !$isValidEmail) {
             throw new HttpBadRequestException($request);

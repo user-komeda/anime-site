@@ -16,7 +16,7 @@ use Slim\Interfaces\RouteCollectorProxyInterface as Group;
 return function (App $app) {
 
     $app->get('/swagger.json', function ($request, $response) {
-        $openapi = Generator::scan([__DIR__ . '/../src/Presentation']);
+        $openapi = (new Generator())->generate([__DIR__ . '/../src/Presentation']);
         if ($openapi === null) {
             return $response->withHeader(
                 'Content-Type',

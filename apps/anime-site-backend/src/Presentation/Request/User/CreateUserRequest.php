@@ -6,7 +6,7 @@ use App\Application\Dto\User\UserCreateInputDto;
 use App\Presentation\Request\BaseRequest;
 use OpenApi\Attributes as OA;
 use Psr\Http\Message\ServerRequestInterface;
-use Respect\Validation\Validator as v;
+use Respect\Validation\ValidatorBuilder as v;
 use Slim\Exception\HttpBadRequestException;
 
 #[OA\Schema(schema: "createUserRequest", title: "createUserRequest")]
@@ -29,14 +29,15 @@ class CreateUserRequest extends BaseRequest
         $lastName = $body['lastName'] ?? null;
         $email = $body['email'] ?? null;
 
-        $isValidFirstName = v::stringType()->notEmpty()->validate($firstName);
-        $isValidLastName = v::stringType()->notEmpty()->validate($lastName);
-        $isValidEmail = v::email()->validate($email);
+        /** @var mixed $v */
+        $v = 'Respect\Validation\ValidatorBuilder';
+        $isValidFirstName = $v::stringType()->notEmpty()->isValid($firstName);
+        $isValidLastName = $v::stringType()->notEmpty()->isValid($lastName);
+        $isValidEmail = $v::email()->isValid($email);
 
         if (!$isValidFirstName || !$isValidLastName || !$isValidEmail) {
             throw new HttpBadRequestException($request);
         }
-
 
         return new self($firstName, $lastName, $email);
     }

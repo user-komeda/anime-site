@@ -6,7 +6,7 @@ use App\Application\Dto\User\UserUpdateInputDto;
 use App\Presentation\Request\BaseRequest;
 use OpenApi\Attributes as OA;
 use Psr\Http\Message\ServerRequestInterface;
-use Respect\Validation\Validator as v;
+use Respect\Validation\ValidatorBuilder as v;
 use Slim\Exception\HttpBadRequestException;
 
 #[OA\Schema(schema: "updateUserRequest", title: "updateUserRequest")]
@@ -29,13 +29,16 @@ class UpdateUserRequest extends BaseRequest
         $lastName = $body['lastName'] ?? null;
         $email = $body['email'] ?? null;
 
-        $isValidFirstName = v::optional(v::stringType()->notEmpty())->validate(
+        /** @var mixed $v */
+        $v = 'Respect\Validation\ValidatorBuilder';
+
+        $isValidFirstName = $v::optional($v::stringType()->notEmpty())->isValid(
             $firstName
         );
-        $isValidLastName = v::optional(v::stringType()->notEmpty())->validate(
+        $isValidLastName = $v::optional($v::stringType()->notEmpty())->isValid(
             $lastName
         );
-        $isValidEmail = v::optional(v::email())->validate($email);
+        $isValidEmail = $v::optional($v::email())->isValid($email);
 
         if (!$isValidFirstName || !$isValidLastName || !$isValidEmail) {
             throw new HttpBadRequestException($request);

@@ -39,7 +39,7 @@
     "spiral/roadrunner-http": "^3.5",
     "spiral/roadrunner-worker": "^3.6",
     "symfony/cache": "^8.0",
-    "zircote/swagger-php": "^5.1"
+    "zircote/swagger-php": "^6.0"
   },
   "require-dev": {
     "deptrac/deptrac": "^3.0",
@@ -49,7 +49,7 @@
     "phpspec/prophecy-phpunit": "^2.0",
     "phpstan/extension-installer": "^1.2.0",
     "phpstan/phpstan": "^1.8",
-    "phpunit/phpunit": "^9.5.26",
+    "phpunit/phpunit": "^13.0.0",
     "squizlabs/php_codesniffer": "^4.0",
     "swagger-api/swagger-ui": "^5.27"
   },

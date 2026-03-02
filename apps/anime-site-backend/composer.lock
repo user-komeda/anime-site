@@ -2376,16 +2376,16 @@
         },
         {
             "name": "respect/validation",
-            "version": "3.0.1",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Respect/Validation.git",
-                "reference": "305a7d15dbc6264619f7c0a6a51d5b872ee723af"
+                "reference": "c0c506692b16ff5a4926f8aa0f68df5bd7432c67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Respect/Validation/zipball/305a7d15dbc6264619f7c0a6a51d5b872ee723af",
-                "reference": "305a7d15dbc6264619f7c0a6a51d5b872ee723af",
+                "url": "https://api.github.com/repos/Respect/Validation/zipball/c0c506692b16ff5a4926f8aa0f68df5bd7432c67",
+                "reference": "c0c506692b16ff5a4926f8aa0f68df5bd7432c67",
                 "shasum": ""
             },
             "require": {
@@ -2416,7 +2416,7 @@
                 "sokil/php-isocodes": "^4.2.1",
                 "sokil/php-isocodes-db-only": "^4.0",
                 "squizlabs/php_codesniffer": "^4.0",
-                "symfony/console": "^7.4",
+                "symfony/console": "^7.4 || ^8.0",
                 "symfony/translation": "^8.0",
                 "symfony/var-exporter": "^6.4 || ^7.0 || ^8.0"
             },
@@ -2450,7 +2450,7 @@
                 }
             ],
             "description": "The most awesome validation engine ever created for PHP",
-            "homepage": "http://respect.github.io/Validation/",
+            "homepage": "http://respect.github.io/",
             "keywords": [
                 "respect",
                 "validation",
@@ -2458,9 +2458,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Respect/Validation/issues",
-                "source": "https://github.com/Respect/Validation/tree/3.0.1"
+                "source": "https://github.com/Respect/Validation/tree/3.1.0"
             },
-            "time": "2026-02-10T05:07:49+00:00"
+            "time": "2026-03-02T13:46:21+00:00"
         },
         {
             "name": "roadrunner-php/roadrunner-api-dto",

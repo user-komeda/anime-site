@@ -2103,7 +2103,7 @@ __metadata:
     concurrently: "npm:9.2.1"
     eslint: "npm:9.39.4"
     eslint-config-prettier: "npm:10.1.8"
-    eslint-config-turbo: "npm:2.8.15"
+    eslint-config-turbo: "npm:2.8.16"
     eslint-import-resolver-typescript: "npm:4.4.4"
     eslint-plugin-import: "npm:2.32.0"
     eslint-plugin-jsx-a11y: "npm:6.10.2"
@@ -3309,15 +3309,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-turbo@npm:2.8.15":
-  version: 2.8.15
-  resolution: "eslint-config-turbo@npm:2.8.15"
+"eslint-config-turbo@npm:2.8.16":
+  version: 2.8.16
+  resolution: "eslint-config-turbo@npm:2.8.16"
   dependencies:
-    eslint-plugin-turbo: "npm:2.8.15"
+    eslint-plugin-turbo: "npm:2.8.16"
   peerDependencies:
     eslint: ">6.6.0"
     turbo: ">2.0.0"
-  checksum: 10c0/c38150a840b5fa5b2193eea37486993302b43eb19f31d98c28472843cb88295a88a4b09409b1a2101561111fc9547370f426c0e6c87838c3668a84f62439da7c
+  checksum: 10c0/f9a2879419bc6e5bdd9b2643efaaf10208eccec1315bf8f5649cb03e92a68eb8437100ec612bd83cc639d3df88f38f1ef18e22e2434f79b3dbe80ebefa622d64
   languageName: node
   linkType: hard
 
@@ -3524,15 +3524,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-turbo@npm:2.8.15":
-  version: 2.8.15
-  resolution: "eslint-plugin-turbo@npm:2.8.15"
+"eslint-plugin-turbo@npm:2.8.16":
+  version: 2.8.16
+  resolution: "eslint-plugin-turbo@npm:2.8.16"
   dependencies:
     dotenv: "npm:16.0.3"
   peerDependencies:
     eslint: ">6.6.0"
     turbo: ">2.0.0"
-  checksum: 10c0/b08f7478323373fa6b26223bc5a08a7db81d49571d78dad86e9e63266144134026b0b4380463640beca9f0c8b4aa0c2e7c7bff62872cc1a8f05f3c1549bd4e3f
+  checksum: 10c0/950db3e03a4ab04287b0a967cd613a14abd4a19b91bd1d6751c7d824ad31900dd3011bcc9c5b1e80aabb5dc379b92ab7fff76ca886dfa87680d70c116ec875cb
   languageName: node
   linkType: hard
 

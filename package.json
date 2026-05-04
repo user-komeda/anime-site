@@ -1,6 +1,6 @@
 {
   "name": "anime-site",
-  "packageManager": "yarn@4.13.0",
+  "packageManager": "yarn@4.14.1",
   "workspaces": [
     "apps/*"
   ],
@@ -10,6 +10,6 @@
     "check": "turbo run check"
   },
   "dependencies": {
-    "turbo": "^2.5.4"
+    "turbo": "^2.9.8"
   }
 }

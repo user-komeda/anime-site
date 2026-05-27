@@ -7,7 +7,7 @@ use DI\ContainerBuilder;
 return function (ContainerBuilder $containerBuilder) {
     $definitions = [];
     $baseDir = dirname(__DIR__);
-    $interfaceBaseDir = $baseDir . "/src/Domain/repository/";
+    $interfaceBaseDir = $baseDir . "/src/Domain/Repository/";
     $iterator = new RecursiveIteratorIterator(
         new RecursiveDirectoryIterator($interfaceBaseDir)
     );

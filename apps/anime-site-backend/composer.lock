@@ -6124,11 +6124,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.56",
+            "version": "2.2.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/93a603c9fc3be8c3c93bbc8d22170ad766685537",
-                "reference": "93a603c9fc3be8c3c93bbc8d22170ad766685537",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e5cc34d491a90e79c216d824f60fe21fd4d93bd6",
+                "reference": "e5cc34d491a90e79c216d824f60fe21fd4d93bd6",
                 "shasum": ""
             },
             "require": {
@@ -6150,6 +6150,17 @@
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ondřej Mirtes"
+                },
+                {
+                    "name": "Markus Staab"
+                },
+                {
+                    "name": "Vincent Langlet"
+                }
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
             "keywords": [
@@ -6173,20 +6184,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-26T17:04:57+00:00"
+            "time": "2026-06-05T09:00:01+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",
-            "version": "2.0.22",
+            "version": "2.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-doctrine.git",
-                "reference": "e87516b034749432d51653c0147e053e476e8c53"
+                "reference": "e20e8bf3223ae6eba9c4b5987c391d922e094b3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/e87516b034749432d51653c0147e053e476e8c53",
-                "reference": "e87516b034749432d51653c0147e053e476e8c53",
+                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/e20e8bf3223ae6eba9c4b5987c391d922e094b3c",
+                "reference": "e20e8bf3223ae6eba9c4b5987c391d922e094b3c",
                 "shasum": ""
             },
             "require": {
@@ -6248,9 +6259,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-doctrine/issues",
-                "source": "https://github.com/phpstan/phpstan-doctrine/tree/2.0.22"
+                "source": "https://github.com/phpstan/phpstan-doctrine/tree/2.0.25"
             },
-            "time": "2026-05-09T08:10:48+00:00"
+            "time": "2026-06-02T20:27:36+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",

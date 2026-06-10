@@ -2377,16 +2377,16 @@
         },
         {
             "name": "respect/validation",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Respect/Validation.git",
-                "reference": "ab992b4b6284b6bb4250829dde07ec7da35d30f9"
+                "reference": "62f489dd3df05882617656d372b445b39b44dc29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Respect/Validation/zipball/ab992b4b6284b6bb4250829dde07ec7da35d30f9",
-                "reference": "ab992b4b6284b6bb4250829dde07ec7da35d30f9",
+                "url": "https://api.github.com/repos/Respect/Validation/zipball/62f489dd3df05882617656d372b445b39b44dc29",
+                "reference": "62f489dd3df05882617656d372b445b39b44dc29",
                 "shasum": ""
             },
             "require": {
@@ -2403,7 +2403,7 @@
                 "giggsey/libphonenumber-for-php-lite": "^8.13 || ^9.0",
                 "mikey179/vfsstream": "^1.6",
                 "nette/php-generator": "^4.1",
-                "pestphp/pest": "^4.2",
+                "pestphp/pest": "^4.6",
                 "phpbench/phpbench": "^1.4",
                 "phpstan/extension-installer": "^1.4",
                 "phpstan/phpstan": "^2.0",
@@ -2459,9 +2459,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Respect/Validation/issues",
-                "source": "https://github.com/Respect/Validation/tree/3.1.1"
+                "source": "https://github.com/Respect/Validation/tree/3.1.2"
             },
-            "time": "2026-03-19T17:29:27+00:00"
+            "time": "2026-06-02T15:02:37+00:00"
         },
         {
             "name": "roadrunner-php/roadrunner-api-dto",

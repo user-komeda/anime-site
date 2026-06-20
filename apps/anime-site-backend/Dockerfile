@@ -13,7 +13,7 @@ WORKDIR /app
 # ============================================================
 FROM base AS rr-fetcher
 # renovate: datasource=github-releases depName=roadrunner-server/roadrunner
-ARG RR_VERSION=2025.1.14
+ARG RR_VERSION=2025.1.15
 
 RUN microdnf -y install curl tar gzip && microdnf clean all
 

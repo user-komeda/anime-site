@@ -1,6 +1,6 @@
 {
   "name": "anime-site",
-  "packageManager": "yarn@4.18.0",
+  "packageManager": "yarn@4.18.1",
   "workspaces": [
     "apps/*"
   ],

@@ -1,3 +1,4 @@
+
 services:
   anime-site-front:
     container_name: anime-site-front
@@ -6,7 +7,10 @@ services:
       dockerfile: ./apps/anime-site-front/Dockerfile
     restart: always
     ports:
-      - 3000:3000
+      - "3000:3000"
+    security_opt:
+      - no-new-privileges:true
+
   anime-site-backend:
     container_name: anime-site-backend
     build:
@@ -14,4 +18,6 @@ services:
       dockerfile: ./apps/anime-site-backend/Dockerfile
     restart: always
     ports:
-      - 8080:8080
+      - "8080:8080"
+    security_opt:
+      - no-new-privileges:true

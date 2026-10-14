@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use App\Config\Handlers\ShutdownHandler;
 use App\Config\Settings\SettingsInterface;
-use App\Presentation\handler\CustomErrorHandler;
+use App\Presentation\Handler\CustomErrorHandler;
 use DI\ContainerBuilder;
 use Nyholm\Psr7\Factory\Psr17Factory;
 use Nyholm\Psr7\Response;

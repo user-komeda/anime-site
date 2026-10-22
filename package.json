@@ -10,6 +10,6 @@
     "check": "turbo run check"
   },
   "dependencies": {
-    "turbo": "^2.9.14"
+    "turbo": "^2.11.9"
   }
 }

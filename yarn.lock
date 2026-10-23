@@ -6188,7 +6188,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo@npm:^2.11.9":
+"turbo@npm:^2.11.9, turbo@npm:^2.9.14":
   version: 2.11.9
   resolution: "turbo@npm:2.11.9"
   dependencies:

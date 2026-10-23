@@ -3,7 +3,7 @@
 # ============================================================
 # base
 # ============================================================
-FROM ghcr.io/user-komeda/docker_php:sha-da579c1@sha256:5c234efe822a526e487a4d84f6c6205354aae97a1dd6df00670f6ce73089b750 AS base
+FROM ghcr.io/user-komeda/docker_php:sha-16edb23@sha256:d83558a19ec43f0208d48d2526aa7264c699a74dd0864c1ec514ca88d0b8809a AS base
 WORKDIR /app
 
 # ============================================================

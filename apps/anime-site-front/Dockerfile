@@ -26,17 +26,11 @@ WORKDIR /app
 
 RUN corepack enable
 
-# AlmaLinux(RHEL系) で非rootユーザーを作成
-RUN groupadd --system --gid 1001 nodejs \
- && useradd  --system --uid 1001 --gid nodejs \
-             --create-home --home-dir /home/nextjs \
-             --shell /sbin/nologin \
-             nextjs
 # 所有者は root のまま（書き換え不可にする）
 COPY --from=installer /app/apps/anime-site-front/build/        /app/build/
 COPY --from=installer /app/apps/anime-site-front/package.json  /app/package.json
 COPY --from=installer /app/node_modules/                       /app/node_modules/
 
-USER nextjs
+USER 1001:1001
 
 CMD ["node_modules/.bin/react-router-serve", "./build/server/index.js"]

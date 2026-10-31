@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f645fde3c0695fda86c778d8fc1a3d8",
+    "content-hash": "c1773dff99f53bb1bfa4acd5778533f2",
     "packages": [
         {
             "name": "brick/math",
@@ -1923,16 +1923,16 @@
         },
         {
             "name": "radebatz/type-info-extras",
-            "version": "1.0.10",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DerManoMann/type-info-extras.git",
-                "reference": "1e71149dee7bf45f5cf208eb3c6c74d45a13d395"
+                "reference": "1436aa4c9aec0af093a27c2287900a3008535f32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DerManoMann/type-info-extras/zipball/1e71149dee7bf45f5cf208eb3c6c74d45a13d395",
-                "reference": "1e71149dee7bf45f5cf208eb3c6c74d45a13d395",
+                "url": "https://api.github.com/repos/DerManoMann/type-info-extras/zipball/1436aa4c9aec0af093a27c2287900a3008535f32",
+                "reference": "1436aa4c9aec0af093a27c2287900a3008535f32",
                 "shasum": ""
             },
             "require": {
@@ -1979,10 +1979,10 @@
             ],
             "support": {
                 "issues": "https://github.com/DerManoMann/type-info-extras/issues",
-                "source": "https://github.com/DerManoMann/type-info-extras/tree/1.0.10"
+                "source": "https://github.com/DerManoMann/type-info-extras/tree/1.0.11"
             },
-            "time": "2026-10-14T00:51:19+00:00",
-            "published-time": "2026-10-14T00:58:48+00:00"
+            "time": "2026-10-26T22:24:45+00:00",
+            "published-time": "2026-10-26T22:25:56+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -4797,32 +4797,31 @@
         },
         {
             "name": "zircote/swagger-php",
-            "version": "6.20.0",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zircote/swagger-php.git",
-                "reference": "c5fbe8d763787c2b65787b662c3e3bca8f39caf7"
+                "reference": "a0ce3c85abb725dc89c3cbd7a5a3e1f0798296f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/c5fbe8d763787c2b65787b662c3e3bca8f39caf7",
-                "reference": "c5fbe8d763787c2b65787b662c3e3bca8f39caf7",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/a0ce3c85abb725dc89c3cbd7a5a3e1f0798296f1",
+                "reference": "a0ce3c85abb725dc89c3cbd7a5a3e1f0798296f1",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^4.19 || ^5.0",
+                "nikic/php-parser": "^5.0",
                 "php": ">=8.2",
                 "phpstan/phpdoc-parser": "^2.0",
                 "psr/log": "^1.1 || ^2.0 || ^3.0",
-                "radebatz/type-info-extras": "^1.0.2",
+                "radebatz/type-info-extras": "^1.0.11",
                 "symfony/console": "^5.4 || ^6.4 || ^7.0 || ^8.0",
                 "symfony/deprecation-contracts": "^2 || ^3",
-                "symfony/finder": "^5.0 || ^6.0 || ^7.0 || ^8.0",
-                "symfony/yaml": "^5.4 || ^6.0 || ^7.0 || ^8.0"
+                "symfony/finder": "^5.4 || ^6.4 || ^7.0 || ^8.0",
+                "symfony/yaml": "^5.4 || ^6.4 || ^7.0 || ^8.0"
             },
             "conflict": {
                 "symfony/console": "<5.4.35",
-                "symfony/finder": "<5.3.7",
                 "symfony/process": ">=6, <6.4.14",
                 "symfony/string": "<5.4.41"
             },
@@ -4839,7 +4838,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.x-dev"
+                    "dev-master": "7.x-dev"
                 }
             },
             "autoload": {
@@ -4878,7 +4877,7 @@
             ],
             "support": {
                 "issues": "https://github.com/zircote/swagger-php/issues",
-                "source": "https://github.com/zircote/swagger-php/tree/6.20.0"
+                "source": "https://github.com/zircote/swagger-php/tree/7.0.0"
             },
             "funding": [
                 {
@@ -4886,8 +4885,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-10-27T22:01:28+00:00",
-            "published-time": "2026-10-28T00:43:14+00:00"
+            "time": "2026-10-28T02:37:56+00:00",
+            "published-time": "2026-10-28T19:50:33+00:00"
         }
     ],
     "packages-dev": [

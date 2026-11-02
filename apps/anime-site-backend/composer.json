@@ -39,7 +39,7 @@
     "spiral/roadrunner-http": "^4.1",
     "spiral/roadrunner-worker": "^3.6.2",
     "symfony/cache": "^8.0.12",
-    "zircote/swagger-php": "^6.1.2"
+    "zircote/swagger-php": "^7.0.0"
   },
   "require-dev": {
     "deptrac/deptrac": "^3.0",

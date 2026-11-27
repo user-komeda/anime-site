@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Presentation\Controllers;
 
 use JsonSerializable;
+use ReturnTypeWillChange;
 
 class ControllerError implements JsonSerializable
 {
@@ -53,7 +54,7 @@ class ControllerError implements JsonSerializable
     /**
      * @return array<string,string|null>
      */
-    #[\ReturnTypeWillChange]
+    #[ReturnTypeWillChange]
     public function jsonSerialize(): array
     {
         return [

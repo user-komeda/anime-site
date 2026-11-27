@@ -24,35 +24,35 @@
   "require": {
     "php": "^8.5",
     "ext-json": "*",
-    "doctrine/dbal": "4.5.1",
-    "doctrine/migrations": "^3.9.7",
-    "doctrine/orm": "3.7.6",
-    "monolog/monolog": "^3.10",
-    "nyholm/psr7": "^1.8.2",
+    "doctrine/dbal": "^4.5.1",
+    "doctrine/migrations": "^3.10.0",
+    "doctrine/orm": "^3.7.6",
+    "monolog/monolog": "^3.13",
+    "nyholm/psr7": "^1.8.3",
     "php-di/php-di": "^7.1.1",
-    "ramsey/uuid": "^4.9.2",
+    "ramsey/uuid": "^4.10.0",
     "ramsey/uuid-doctrine": "^2.1",
-    "respect/validation": "^3.1.1",
-    "slim/psr7": "^1.8",
-    "slim/slim": "^4.15.2",
-    "spiral/roadrunner": "^2025.1.14",
-    "spiral/roadrunner-http": "^4.1",
+    "respect/validation": "^3.1.2",
+    "slim/psr7": "^1.8.1",
+    "slim/slim": "^4.15.3",
+    "spiral/roadrunner": "^2025.1.15",
+    "spiral/roadrunner-http": "^4.2.1",
     "spiral/roadrunner-worker": "^3.6.2",
-    "symfony/cache": "^8.0.12",
-    "zircote/swagger-php": "^7.0.0"
+    "symfony/cache": "^8.1.12",
+    "zircote/swagger-php": "^7.11.0"
   },
   "require-dev": {
     "deptrac/deptrac": "^3.0",
-    "friendsofphp/php-cs-fixer": "^3.95.2",
+    "friendsofphp/php-cs-fixer": "^3.95.32",
     "jangregor/phpstan-prophecy": "^2.3.0",
-    "phpmd/phpmd": "^2.15",
+    "phpmd/phpmd": "^3.0",
     "phpspec/prophecy-phpunit": "^2.5",
     "phpstan/extension-installer": "^1.4.3",
-    "phpstan/phpstan": "^2.1.56",
-    "phpstan/phpstan-doctrine": "^2.0.22",
-    "phpunit/phpunit": "^13.1.12",
-    "squizlabs/php_codesniffer": "^4.0.1",
-    "swagger-api/swagger-ui": "^5.32.6"
+    "phpstan/phpstan": "^2.3.7",
+    "phpstan/phpstan-doctrine": "^2.1.2",
+    "phpunit/phpunit": "^13.4.8",
+    "squizlabs/php_codesniffer": "^4.0.4",
+    "swagger-api/swagger-ui": "^5.36.0"
   },
   "config": {
     "allow-plugins": {
@@ -77,12 +77,11 @@
       "@phpstan",
       "@phpcf",
       "@phpmd",
-      "@deptrac",
       "@test"
     ],
     "phpstan": "./vendor/bin/phpstan",
     "phpcf": "./vendor/bin/php-cs-fixer fix ./",
-    "phpmd": "./vendor/bin/phpmd ./ text phpmd.xml --suffixes php --exclude vendor,var,public,.github,.logs,migrations,generate-criteria-param-builder.php",
+    "phpmd": "./vendor/bin/phpmd analyze ./ --format=text --ruleset=phpmd.xml --suffixes=php --exclude=vendor --exclude=var --exclude=public --exclude=.github --exclude=.logs --exclude=migrations --exclude=generate-criteria-param-builder.php",
     "test": "phpunit"
   }
 }

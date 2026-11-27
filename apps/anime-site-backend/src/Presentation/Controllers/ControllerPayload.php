@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Presentation\Controllers;
 
 use JsonSerializable;
+use ReturnTypeWillChange;
 
 class ControllerPayload implements JsonSerializable
 {
@@ -53,7 +54,7 @@ class ControllerPayload implements JsonSerializable
     /**
      * @return array<string, array<object>|int|object>
      */
-    #[\ReturnTypeWillChange]
+    #[ReturnTypeWillChange]
     public function jsonSerialize(): array
     {
         $payload = [
